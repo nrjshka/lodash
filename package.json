@@ -1,0 +1,16 @@
+{
+  "name": "lodash",
+  "version": "1.0.0",
+  "description": "Custom lodash by nrjshka",
+  "main": "index.js",
+  "repository": "git@github.com:nrjshka/lodash.git",
+  "author": "nrjshka <m.korolev@city-mobil.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^8.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {}
+}
