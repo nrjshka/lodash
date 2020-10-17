@@ -1,15 +1,13 @@
-function castToInt(val) {
-  return val | 0;
-}
+const toInteger = require('./toInteger');
 
 function chunk(array, size = 1) {
-  const correnctSize = castToInt(size);
+  const correctSize = Math.max(toInteger(size), 0);
 
   const output = [];
   let [iterator, buffer] = [0, []];
 
   for (let i = 0; i < array.length; i++) {
-    if (iterator++ >= correnctSize) {
+    if (iterator++ >= correctSize) {
       output.push(buffer);
 
       buffer = [array[i]];
