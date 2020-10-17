@@ -1,5 +1,5 @@
-var assert = require('assert');
-var chunk = require('../chunk.js');
+const assert = require('assert');
+const chunk = require('../chunk.js');
 
 describe('chunk', function() {
   var array = [0, 1, 2, 3, 4, 5];
