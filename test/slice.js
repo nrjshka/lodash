@@ -91,14 +91,6 @@ describe('slice', function() {
     assert.deepStrictEqual(actual, [[1], [1], [1], [2, 3], [1], []]);
   });
 
-  it('should work as an iteratee for methods like `_.map`', function() {
-    var array = [[1], [2, 3]],
-        actual = lodashStable.map(array, slice);
-
-    assert.deepStrictEqual(actual, array);
-    assert.notStrictEqual(actual, array);
-  });
-
   it('should work in a lazy sequence', function() {
     var array = lodashStable.range(1, LARGE_ARRAY_SIZE + 1),
         length = array.length,
