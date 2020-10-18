@@ -10,4 +10,4 @@ function compact(array) {
   return output;
 }
 
-module.exports = compact;
+export default compact;

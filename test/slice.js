@@ -1,6 +1,6 @@
 const assert = require("assert");
 const lodashStable = require("lodash");
-const { falsey, LARGE_ARRAY_SIZE } = require("./utils.js");
+import { falsey, LARGE_ARRAY_SIZE }  from "./utils.js";
 const slice = require("../slice.js");
 
 describe('slice', function() {

@@ -698,7 +698,7 @@ lodashStable.attempt(function() {
   }
 });
 
-module.exports = {
+export {
   HOT_COUNT,
   LARGE_ARRAY_SIZE,
   FUNC_ERROR_TEXT,
@@ -783,7 +783,7 @@ module.exports = {
   Worker,
   lodashStable,
   _,
-  mapCaches,
+  // mapCaches,
   coverage,
   asyncFunc,
   genFunc,

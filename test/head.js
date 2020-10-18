@@ -1,6 +1,6 @@
 const assert = require("assert");
 const lodashStable = require("lodash");
-const { arrayProto, LARGE_ARRAY_SIZE, isEven } = require("./utils.js");
+import { arrayProto, LARGE_ARRAY_SIZE, isEven } from "./utils.js";
 const head = require("../head.js");
 const first = require("../first.js");
 

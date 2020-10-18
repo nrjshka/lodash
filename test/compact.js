@@ -1,8 +1,8 @@
-const assert = require("assert");
-const lodashStable = require("lodash");
-const { LARGE_ARRAY_SIZE, _, falsey, identity } = require("./utils.js");
-const compact = require("../compact.js");
-const slice = require("../slice.js");
+import assert  from "assert";
+import lodashStable  from "lodash";
+import { LARGE_ARRAY_SIZE, _, falsey, identity } from "./utils.js";
+import compact from "../compact.js";
+import slice from "../slice.js";
 
 describe('compact', function() {
   var largeArray = lodashStable.range(LARGE_ARRAY_SIZE).concat(null);
