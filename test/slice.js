@@ -93,8 +93,8 @@ describe('slice', function() {
 
   it('should work in a lazy sequence', function() {
     var array = lodashStable.range(1, LARGE_ARRAY_SIZE + 1),
-        length = array.length,
-        wrapped = _(array);
+      length = array.length,
+      wrapped = _(array);
 
     lodashStable.each(['map', 'filter'], function(methodName) {
       assert.deepEqual(wrapped[methodName]().slice(0, -1).value(), array.slice(0, -1));
